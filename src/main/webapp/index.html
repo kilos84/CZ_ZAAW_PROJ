@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Logowanie</title>
+    
+    <link rel="stylesheet" href="main_quiz.css" type="text/css" />
 </head>
 <body>
-    <form method="POST" action="">
+    <form method="POST" action="" id="login-form">
         <!--<input type="hidden" name="type" value="PUT"/>-->
         <label for="login">Login</label>
-        <input type="text" id="login" name="login" />
+        <input type="text" id="login" name="login" placeholder="podaj swój login"/>
         <label for="password">Hasło</label>
-        <input type="password" id="password" name="password" />
+        <input type="password" id="password" name="password" placeholder="podaj swoje hasło" />
         <button type="submit">Login</button>
     </form>
 </body>

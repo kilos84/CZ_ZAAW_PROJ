@@ -1,0 +1,119 @@
+/*
+ * 
+ * ustawienie tła i czcionki dla strony logowania
+ * 
+ * */
+
+body
+{
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("img/pool_table.png");
+	font-size: 20px;
+}
+
+/*
+ * wyśrodkujmy całość forumlarza logowania
+ */
+#login-form
+{
+	background-color: #D9E9C5;
+	width: 300px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	/*  dla mozilli i silnika opery itp */
+	-webkit-box-shadow: 12px 12px 30px 4px rgba(25, 50, 50, 0.47);
+	-moz-box-shadow:    12px 12px 30px 4px rgba(25, 50, 50, 0.47);
+	box-shadow:         12px 12px 30px 4px rgba(25, 50, 50, 0.47);
+}
+
+/*
+ * obiekty w formularzu będą wyświetlane jeden pod drugim
+ * */
+ 
+input[type=password],
+input[type=text],
+button[type=submit],
+label
+{	
+   display: block;
+}
+
+label
+{
+	font: Serif;
+	color: #659B1E;
+}
+ 
+input[type=text],
+input[type=password]
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+    margin-bottom: 20px;
+}
+
+/*
+ * dodanie stylów dla zaznaczonego elementu login albo haslo
+ * */
+
+input[type=text]:focus,
+input[type=password]:focus
+{	
+	-webkit-box-shadow: 0px 0px 10px -2px rgba(44, 50, 50, 1);
+	-moz-box-shadow:    0px 0px 10px -2px rgba(44, 50, 50, 1);
+	box-shadow:         0px 0px 10px -2px rgba(44, 50, 50, 1);
+	border: 2px solid #a5cda5;
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+/*
+ * stylizacja przycisku typu submit forumlarza
+ * 
+ * */
+
+button[type=submit]
+{
+	width: 300px;
+	background-color: #36b03c;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+/*
+ * stylizacja przycisku typu submit forumlarza
+ * w momencie kiedy jest aktywny
+ * */
+
+
+button[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(44, 50, 50, 1);
+	-moz-box-shadow:    0px 0px 15px 5px rgba(44, 50, 50, 1);
+	box-shadow:         0px 0px 15px 5px rgba(44, 50, 50, 1);
+}
+
+/* * 
+ * "efekt podświetlenia" przycisku podczas najechania na niego myszką
+ * */
+
+button[type=submit]:hover
+{
+	background-color: #37b93d; /*coś jaśniejszego*/
+}
