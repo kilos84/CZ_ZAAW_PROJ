@@ -1,6 +1,5 @@
 /*
- * 
- * ustawienie tła i czcionki dla strony logowania
+ * setting up background and font for the login page
  * 
  * */
 
@@ -12,7 +11,7 @@
 }
 
 /*
- * wyśrodkujmy całość forumlarza logowania
+ * styling login form
  */
  
  #login-form
@@ -21,6 +20,9 @@
 	padding: 50px;
 	margin-top: 100px;
  }
+ /*
+  * center the ie login-form
+  * */
  
 .center-position
 {
@@ -48,7 +50,7 @@
 }
 
 /*
- * obiekty w formularzu będą wyświetlane jeden pod drugim
+ * objects in the ie. form will be displayed vertically
  * */
  
 .horizontal-view
@@ -56,12 +58,19 @@
    display: block;
 }
 
+/*
+ * label-form styling
+ * */
+
 .label-form
 {
 	font: Serif;
 	color: #659B1E;
 }
  
+ /*
+  * input styling for login-form
+  * */
 .input-style
 {
 	width: 300px;
@@ -77,7 +86,7 @@
 }
 
 /*
- * dodanie stylów dla zaznaczonego elementu login albo haslo
+ * focused element styling for input in login-form 
  * */
 
 .focus-input-shadow:focus
