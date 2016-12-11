@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <title>Logowanie</title>
     
-    <link rel="stylesheet" href="main_quiz.css" type="text/css" />
+    <link rel="stylesheet" href="css/main_quiz.css" type="text/css" />
 </head>
-<body>
-    <form method="POST" action="" id="login-form">
+<body class="body-style">
+    <form method="POST" action="" id="login-form"
+				class="medium-shadow light-green center-position">
         <!--<input type="hidden" name="type" value="PUT"/>-->
-        <label for="login">Login</label>
-        <input type="text" id="login" name="login" placeholder="podaj swój login"/>
-        <label for="password">Hasło</label>
-        <input type="password" id="password" name="password" placeholder="podaj swoje hasło" />
-        <button type="submit">Login</button>
+        <label for="login" 
+				class="horizontal-view label-form">Login</label>
+        <input type="text" id="login" name="login" placeholder="podaj swój login" 
+				class="focus-input-shadow horizontal-view input-style"/>
+        <label for="password" 
+				class="horizontal-view label-form">Hasło</label>
+        <input type="password" id="password" name="password" placeholder="podaj swoje hasło" 
+				class="focus-input-shadow horizontal-view input-style" />
+        <button type="submit" 
+				class="horizontal-view button-style button-normal-color button-focused-color button-focus-shadow" 
+				>Login</button>
     </form>
 </body>
 </html>
